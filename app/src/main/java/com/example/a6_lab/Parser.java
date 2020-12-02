@@ -25,17 +25,11 @@ public class Parser {
             NodeList rateNodes = doc.getElementsByTagName(Constants.CUBE_NODE);
             for (int i = 0; i < rateNodes.getLength(); ++i) {
                 Element cube = (Element) rateNodes.item(i);
-                if(cube.hasAttribute("currency")){
-                    currencyName = cube.getAttribute("currency");
-                    result = cube.getAttribute("rate");
+                if(cube.hasAttribute(Constants.CURRENCY)){
+                    currencyName = cube.getAttribute(Constants.CURRENCY);
+                    result = cube.getAttribute(Constants.RATE);
                     currencyName = currencyName + " - " + result;
                     Data[i]=(currencyName);
-                    /*
-                    if(currencyName.equals(currencyCode))
-                    {
-                        result = cube.getAttribute("rate");
-                        break;
-                    }*/
                 }
             }
         } catch (ParserConfigurationException e) {

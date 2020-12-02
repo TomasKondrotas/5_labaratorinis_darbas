@@ -31,13 +31,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPostExecute(String[] result)
             {
+                adapter.clear();
+                adapter.notifyDataSetChanged();
                 for(String element : result)
                 {
-                    System.out.println(element);
-/*
+                    if(element != null)
+                    {
+                    //System.out.println(element);
                     adapter.add(element);
                     adapter.notifyDataSetChanged();
-*/
+                    }
                 }
 
             }

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">6_lab</string>
+    <string name="btnDownload">Download rates</string>
 </resources>
