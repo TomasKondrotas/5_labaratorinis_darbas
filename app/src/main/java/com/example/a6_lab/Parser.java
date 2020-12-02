@@ -14,8 +14,8 @@ import javax.xml.parsers.ParserConfigurationException;
 
 public class Parser {
     public static String[] getRateFromECB(InputStream stream) throws IOException {
-        String result = "";
-        String currencyName = "";
+        String result ;
+        String currencyName ;
         String[] Data = new String[100];
         try {
             DocumentBuilderFactory xmlDocFactory = DocumentBuilderFactory.newInstance();

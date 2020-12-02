@@ -8,9 +8,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 
 public class MainActivity extends AppCompatActivity {
     ArrayList<String> empty = new ArrayList<>();

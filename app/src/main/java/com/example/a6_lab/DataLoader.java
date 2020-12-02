@@ -23,7 +23,7 @@ public abstract class DataLoader extends AsyncTask<Void, Void, String[]> {
     }
 
         public static String[] getRateFromECB() throws IOException {
-            String rate[];
+            String[] rate;
             InputStream stream = downloadUrl(Constants.ECB_URL);
             try {
                 rate = Parser.getRateFromECB(stream);
